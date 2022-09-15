@@ -96,10 +96,6 @@ I repeated the above steps for a signal with a **900 Hz** frequency:
 
 As it can be seen, the above signal can be read as **0111100111**.
 
-The implementation of the corresponding filter:
-
-<img src="images/15.png" width="100" height="100">
-
 Next, I designed a **highpass filter** as below:
 
 ```ruby
