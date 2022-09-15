@@ -16,9 +16,9 @@ sys_LPF = tf(1,[RC 1]);
 
 The results are as follows:
 
-<img src="images/2.png" width="70" height="70">
+<img src="images/2.png" width="180" height="180">
 
-<img src="images/3.png" width="100" height="100">
+<img src="images/3.png" width="270" height="250">
 
 I improved the lowpass filter by changing the RC values in the LPF in a for loop as below. By increasing the RC value, noise is removed much more.
 
@@ -30,7 +30,7 @@ for i=1:5
 
 The results are as follows:
 
-<img src="images/4.png" width="100" height="100">
+<img src="images/4.png" width="270" height="250">
 
 Then, I designed a bandpass filter to separate the signal with 5Hz frequency (the **analog signal**) using the **tf** command in MATLAB as below:
 
@@ -43,9 +43,9 @@ sys_BPF = tf([RhCh, 0],[RhCh * RlCl, RhCh + RlCl, 1]);
 
 The results are as below:
 
-<img src="images/5.png" width="100" height="100">
+<img src="images/5.png" width="270" height="250">
 
-<img src="images/6.png" width="100" height="100">
+<img src="images/6.png" width="270" height="250">
 
 The **bode diagram** for surveying the amplitude:
 
@@ -55,9 +55,9 @@ bodemag(k*sys_BPF, magnitude_change)
 
 The graphs are as follows:
 
-<img src="images/7.png" width="100" height="100">
+<img src="images/7.png" width="270" height="250">
 
-<img src="images/8.png" width="100" height="100">
+<img src="images/8.png" width="270" height="250">
 
 I also used an **exponential filter** to get the signal at 100Hz more exclusively:
 
@@ -68,11 +68,11 @@ for n=1:10
 
 The result is as below:
 
-<img src="images/9.png" width="100" height="100">
+<img src="images/9.png" width="270" height="250">
 
 The filter's output for the input y:
 
-<img src="images/10.png" width="100" height="100">
+<img src="images/10.png" width="270" height="250">
 
 As it can be seen, the above signal can be read as **1101111110**.
 
@@ -80,19 +80,19 @@ I repeated the above steps for a signal with a **900 Hz** frequency:
 
 **The signal:**
 
-<img src="images/11.png" width="100" height="100">
+<img src="images/11.png" width="270" height="250">
 
 **The bode diagram:**
 
-<img src="images/12.png" width="100" height="100">
+<img src="images/12.png" width="270" height="250">
 
 **The exponential filter:**
 
-<img src="images/13.png" width="100" height="100">
+<img src="images/13.png" width="270" height="250">
 
 **The filter's output for the input y:**
 
-<img src="images/14.png" width="100" height="100">
+<img src="images/14.png" width="270" height="250">
 
 As it can be seen, the above signal can be read as **0111100111**.
 
@@ -105,7 +105,7 @@ sys_HPF = tf(RC,[RC 1]);
 
 The filtered signal is as follows:
 
-<img src="images/16.png" width="100" height="100">
+<img src="images/16.png" width="270" height="250">
 
 As the final part of this project, I implemented a **notch filter** in MATLAB as below:
 
