@@ -16,7 +16,7 @@ sys_LPF = tf(1,[RC 1]);
 
 The results are as follows:
 
-<img src="images/2.png" width="150" height="190">
+<img src="images/2.png" width="190" height="150">
 
 <img src="images/3.png" width="270" height="250">
 
