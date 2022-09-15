@@ -5,7 +5,7 @@ By using a **lowpass filter** I separated the noise from the data. Afterwards, b
 
 First, I plotted the signal from the Hw1_sig file for 0-20 seconds as below:
 
-<img src="images/1.png" width="100" height="100">
+<img src="images/1.png" width="300" height="300">
 
 Then, by applying a low pass filter I removed the effect of **noise** on the signal:
 
