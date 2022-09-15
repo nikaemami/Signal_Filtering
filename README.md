@@ -43,7 +43,7 @@ sys_BPF = tf([RhCh, 0],[RhCh * RlCl, RhCh + RlCl, 1]);
 
 The results are as below:
 
-<img src="images/5.png" width="270" height="250">
+<img src="images/5.png" width="180" height="135">
 
 <img src="images/6.png" width="270" height="250">
 
